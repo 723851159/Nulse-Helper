@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/wrapper"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    android:background="@color/white"
+    android:minHeight="80dp"
+    android:orientation="vertical"
+    android:paddingBottom="10dp"
+    android:paddingLeft="20dp"
+    android:paddingRight="35dp"
+    android:paddingTop="10dp" >
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="false"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="false"
+        android:layout_alignParentTop="true"
+        android:paddingRight="15dp"
+        android:src="@drawable/patient_view" />
+
+    <TextView
+        android:id="@+id/txtName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/imageView"
+        android:layout_toEndOf="@+id/imageView"
+        android:paddingTop="3dp"
+        android:textColor="@color/black"
+        android:textSize="14dp" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toStartOf="@+id/txtLocation"
+        android:src="@drawable/location_view" />
+
+    <TextView
+        android:id="@+id/txtLocation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:paddingLeft="10dp"
+        android:paddingTop="3dp"
+        android:textColor="@color/black"
+        android:textSize="14dp" />
+
+    <LinearLayout
+        android:id="@+id/llTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/txtName"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="false"
+        android:gravity="bottom"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="预计 "
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/txtTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="bottom"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="后换药"
+            android:textColor="@color/black" />
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/bttnCha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/llTextView"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@id/txtLocation"
+        android:background="@color/transparent"
+        android:src="@drawable/bttn_chakan_selector" />
+
+</RelativeLayout>

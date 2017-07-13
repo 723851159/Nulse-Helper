@@ -1,0 +1,63 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/top_bar" >
+
+        <Button
+            android:id="@+id/bttnReturn"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/top_return_selector" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="患者呼叫"
+            android:textColor="@color/white"
+            android:textSize="24sp" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/gray" />
+
+    <com.example.nulsehelper.ReFlashListView
+        android:id="@+id/lvMainInfo"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="8"
+        android:cacheColorHint="#00000000"
+        android:divider="@color/gray"
+        android:dividerHeight="1dp" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center"
+        android:layout_weight="0.2"
+        android:gravity="bottom"
+        android:paddingBottom="5dp" >
+
+    </RelativeLayout>
+
+    <com.example.nulsehelper.ReFlashListView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+    </com.example.nulsehelper.ReFlashListView>
+
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+    </ListView>
+
+</LinearLayout>
